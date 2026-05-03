@@ -12,21 +12,8 @@ export const metadata: Metadata = {
   description: 'Connect with trusted travel agents and discover curated trip packages designed for solo travelers. Your next adventure awaits.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/globe.svg',
+    shortcut: '/globe.svg',
   },
 }
 

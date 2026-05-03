@@ -1,4 +1,4 @@
-import { Session } from "../../../../../packages/frontend-sdk/src/base/session";
+import { Session } from "@repo/frontend-sdk";
 
 // Reads the token stored in localStorage (set during login/signup)
 export const getNewToken = async (): Promise<string> => {

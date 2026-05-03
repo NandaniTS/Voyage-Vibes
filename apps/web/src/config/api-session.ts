@@ -1,4 +1,4 @@
-import { Session } from "../../../../packages/frontend-sdk/src/base/session";
+import { Session } from "@repo/frontend-sdk";
 import { getNewToken } from "../utils/helpers/generate-token";
 
 let sessionInstance: Session | null = null;
