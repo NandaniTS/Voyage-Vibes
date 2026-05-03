@@ -17,10 +17,16 @@ const server = createServer(app);
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.CORS_ALLOWED_ORIGINS || "http://localhost:3000",
+  credentials: true,
+}));
 
 // Middleware to parse cookies
 app.use(cookieParser());
+
+// Serve static files from uploads directory
+
 
 app.get("/", (req: Request, res: Response) => {
   res.status(200).json({
@@ -29,8 +35,10 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
-
 app.use("/api", apiRouter);
+
+app.use('/api/uploads', express.static('uploads'));
+
 
 async function startServer() {
   try {

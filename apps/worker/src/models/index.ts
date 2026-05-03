@@ -1,0 +1,6 @@
+export * from "./user-model"
+export * from "./package-model"
+export * from "./booking-model"
+export * from "./review-model"
+export * from "./wishlist-model"
+export * from "./bank-detail-model"

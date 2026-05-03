@@ -1,8 +1,7 @@
 {
   "name": "worker",
   "private": true,
-  "type":"module",
-  
+  "type": "module",
   "scripts": {
     "check-types": "tsc --noEmit",
     "build": "pnpm run check-types && tsup --clean",
@@ -13,11 +12,17 @@
   "dependencies": {
     "@repo/definitions": "workspace:*",
     "@repo/frontend-sdk": "workspace:*",
+    "@types/multer": "^2.1.0",
+    "@types/uuid": "^11.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "mongoose": "^9.1.2"
+    "mongoose": "^9.1.2",
+    "mongoose-delete": "^1.0.7",
+    "multer": "^2.1.1",
+    "razorpay": "^2.9.6",
+    "uuid": "^14.0.0"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +31,7 @@
     "@types/cookie-parser": "^1.4.10",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/mongoose-delete": "^1.0.6",
     "@types/node": "^22.15.3",
     "nodemon": "^3.1.11",
     "tsup": "^8.5.1",

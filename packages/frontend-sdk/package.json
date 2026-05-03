@@ -1,15 +1,27 @@
 {
   "name": "@repo/frontend-sdk",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Frontend SDK for API integration",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "echo 'No lint configured'",
+    "check-types": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@repo/definitions": "workspace:*",
+    "@tanstack/react-query": "^5.90.21",
+    "axios": "^1.15.0",
+    "jwt-decode": "^4.0.0"
+  },
   "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
     "typescript": "^5.9.3"
   }
 }
